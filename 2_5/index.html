@@ -7,6 +7,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
+    $("#button").on("click", ()=>{
+      const color_num = $("#value").val();
+      const colors = ["#aaa", "red", "Lime", "blue"];
+      const color = colors[Number(color_num)];
+      $("#box").css("background-color",color);
+    });
   });
   </script>
 </head>
